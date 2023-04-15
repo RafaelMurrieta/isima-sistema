@@ -1,0 +1,32 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+     }
+     
+   
+   #logo{
+       max-width: 40%;
+       margin-left: 10%;
+       }
+
+       
+.alert h1{
+        margin-top: 8%;
+        margin-left: 40%;
+       }
+              
+.alert p{
+    margin-left: 40%;
+   }
+  #opciones button{
+    top: 10%;
+    margin-top:3%;
+    margin-left: 3%;
+    width: 90%;
+   }
+   #opciones button a{
+    color: white;
+    text-decoration: none;
+   }
+  

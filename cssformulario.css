@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+input, label{
+    font-family: 'Libre Baskerville', serif;
+}
+h1{
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    animation: recorer 1s;
+    transform: translate(0);
+}
+@keyframes recorer{
+    from{transform: translateX(-50px);}
+    to{transform: translateX(0);}
+}
+.registro{
+    margin-left: 35%;
+    width: auto;
+    height:800px;
+}
+.datos{
+    width: 50%;
+    height: 70%;
+    box-shadow:rgba(0, 0, 0, 0.7) 0px 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+    margin-left: 40px;
+    padding: auto;
+    display: grid;
+    align-items: center;
+}
+.dato{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    color:black;
+}
+#direccion{
+    height: 200px;
+}
+#fecha{
+    height: 200px;
+}
+
+button{
+    display: grid;
+    margin-left: 18%;
+    margin-top: 2%;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    animation: big 1s;
+    transform: scale(1.5);
+    border: 1px;
+}
+
+@keyframes big{
+    from{transform: translateX(0px);}}
+
+#redi{
+    display:flex;
+    text-align:center;
+    align-items:center;
+    
+}

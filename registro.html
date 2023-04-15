@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registrate</title>
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top" >
+    <div class="container-fluid" id="barra">
+      <a class="navbar-brand" href="Index.html"><img src="isma.png" alt="" id="logo"></a>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Index.html">Isima</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="QuienesSomos.html">
+              ¿Quienes somos?
+              </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+      <script src="js/bootstrap.min.js"></script>
+      <!--FORMULARIO-->
+
+      <div class="container">
+      <form id="registro" class="col-3" action="registro.php" method="post">
+        <div class="sm-3 ">
+          <label for="exampleInputEmail1" class="form-label" id="title">Registrate</label>
+          <input type="texto" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+          <input type="email" class="form-control" id="correo" placeholder="Correo" name="correo">
+          <input type="password" class="form-control" placeholder="Contraseña" id="contraseña" name="contraseña">
+          <span id="passwordHelpInline" class="form-text">
+            Contraseña entre 8 a 20 caracteres
+          </span>
+        </div>
+        <button type="submit" class="btn btn-primary" id="registrar" name="registrar">Registrar</button>
+        <div class="form-section">
+          <p> Ya tienes una cuenta? <a href="Index.html">Inicia sesion aqui</a> </p>
+        </div>
+      </form>
+    </div>
+    <?php
+    include ("registro.php") ;
+    ?>
+</body>
+</html>
+  
